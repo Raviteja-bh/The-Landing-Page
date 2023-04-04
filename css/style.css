@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: #808080;
+    background-color: wheat;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -10,45 +10,64 @@ body {
 
 a {
     text-decoration: none;
-    color: rgb(3, 211, 252);
+    color: whitesmoke;
+    font-weight: 700;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     /* border: 3px solid red; */
+    align-items: center;
     margin: 0;
     padding: 1em;
     padding-top: 0;
     padding-left: 4em;
+    padding-right: 4em;
+    background-color:rgb(31, 27, 27);
+}
+
+header > h2 {
+    color: white
 }
 
 ul {
-    font-size: medium;
+    font-size: 16px;
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     /* border: 3px solid green; */
-    width: 300px;
+    width: 400px;
 }
 
 .footer {
     display: flex;
     justify-content: center;
-    margin-top: 4px;
+    align-items: center;
+    margin-top: 0px;
+    padding: 30px;
+    background-color: rgb(31, 27, 27);
+    color: whitesmoke;
 }
 
 .content {
     display: flex;
     justify-content: space-between;
-    border: 3px solid red;
+    /* border: 3px solid red; */
+    align-items: center;
+    padding: 4em;
 }
 .para {
     display: flex;
     flex-direction: column;
     padding: 2em;
-    
+    flex: 1;
     align-items: center;
+}
+
+.content > img {
+    flex: 1;
+    height: 400px
 }
 
 .Types {
@@ -57,7 +76,7 @@ ul {
 }
 
 .Types .Head {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,6 +86,8 @@ ul {
     flex-direction: row;
     justify-content: center;
     margin-bottom: 4em;
+    flex-wrap: wrap;
+    flex: 1;
 }
 
 .image {
@@ -83,3 +104,47 @@ ul {
     width: 200px;
     border-radius: 25px;
 }
+
+.quotes {
+    display: flex;
+    font-size: 50px;
+    flex-direction: column;
+    align-items: center;
+    /* border: 3px solid blue; */
+}
+
+.outer {
+    margin: 19px;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 70px;
+    display: flex;
+    font-size: larger;
+    justify-content: center;
+    /* border: 3px solid green; */
+    flex-direction: column;
+    align-items: stretch;
+    /* background-color: blanchedalmond; */
+}
+
+.inner {
+    background-color: rgba(27, 186, 220, 1);
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 25px;
+    
+}
+
+#btn {
+    background-color:rgba(27, 186, 220, 1);
+    border-color: whitesmoke;
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 15px;
+}
+
